@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <link rel="stylesheet" href="C:\Users\Prathmesh\Desktop\Banking system html\style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Banking System</h1>
+    </header>
+    <main>
+        <!-- Login Section -->
+        <section id="login-section">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Enter your username" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <!-- Dashboard Section -->
+        <section id="dashboard-section" class="hidden">
+            <h2>Welcome, <span id="user-display"></span>!</h2>
+            <button id="logout-button">Logout</button>
+            <div id="balance-section">
+                <h3>Balance: $<span id="balance">1000</span></h3>
+            </div>
+            <section id="transaction-section">
+                <h2>Transactions</h2>
+                <form id="transaction-form">
+                    <input type="number" id="amount" placeholder="Enter amount" required>
+                    <button type="button" id="deposit-button">Deposit</button>
+                    <button type="button" id="withdraw-button">Withdraw</button>
+                </form>
+                <div id="transaction-history">
+                    <h3>Transaction History</h3>
+                    <ul id="transaction-list">
+                        <!-- Transactions will be dynamically inserted here -->
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Banking System. All rights reserved.</p>
+    </footer>
+    <script src="C:\Users\Prathmesh\Desktop\Banking system html\app.js"></script>
+</body>
+</html>
